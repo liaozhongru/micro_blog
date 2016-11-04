@@ -82,6 +82,14 @@ router.post("/reg",function(req,res) {
 	});
 });
 
+router.post("/firstAPI",function(req,res) {
+	console.log("req.body = ",req.body);
+	res.send({'key1' : 'value1'});
+})
+
+
+
+
 // 登录页路由
 router.get("/login",checkNotLogin);
 router.get("/login",function(req,res) {
